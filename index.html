@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youtube</title>
+
+<!-- Favi-Icon  -->
+<link rel="apple-touch-icon" sizes="180x180" href="imgaes/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Style Sheet Link -->
+<link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="style2.css"> -->
+
+<!-- Font Awosome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Header Section start -->
+<header>
+    <div class="container"> <!-- Used for Giving Both Side Margin of 5 px -->
+    <!----------------------- Nav Bar ---------------------- -->
+        <nav>
+            <div class="flex-div Nav-bar">
+                <!-- First Column -->
+                <div class="nav-left flex-div">
+                    <!-- <div class="menu-icon" id="menu-icon"> -->
+                        <img src="images/menu.png" id="menu-icon" alt="menu-icon">
+                    <!-- </div> -->
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <!-- Second Column -->
+                <div class="nav-middle flex-div">
+                    <!-- <div class="seach-box"> -->
+                        <textarea name="Search" placeholder="   Search" id="Search-box" cols="50"></textarea>
+                        <img src="images/search.png" alt="search-icon">
+                    <!-- </div> -->
+                    <img src="images/voice-search.png" alt="">
+                </div>
+                <!-- Third Column -->
+                <div class="nav-right flex-div">
+                    <img src="images/upload.png" alt="">
+                    <img src="images/more.png" alt="">
+                    <img src="images/notification.png" alt="">
+                    <img src="images/Jack.png" id="account-icon" alt="">
+                </div>
+            </div>
+
+        </nav>
+            
+        <div class="menuBar" id="menuBar">
+            <button class="loginBox">
+                Login
+            </button>
+            <div class="theme">
+                <h2>Change Theme : </h2>
+            <button onclick="DarkMode()" class="DarkMode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </button>
+            </div>
+        </div>
+
+
+        </div>
+    
+    </div>
+
+    <!-- -----------------------Side Bar--------------------- -->
+
+    <div class="sideBar" id="sideBar">
+        <div class="row active flex-div ">
+            <img src="images/home.png" alt="">
+            <a href="#">Home</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/explore.png" alt="">
+            <a href="#">Explore</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/subscriprion.png" alt="">
+            <a href="#">Subscriprion</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/library.png" alt="">
+            <a href="#">library</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/history.png" alt="">
+            <a href="#">history</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/history.png" alt="">
+            <a href="#">history</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/cast.png" alt="">
+            <a href="#">cast</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/playlist.png" alt="">
+            <a href="#">playlist</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/show-more.png" alt="">
+            <a href="#">Show More</a>
+        </div>
+
+        <hr>  <!-- Horizotal Ruler --> </hr>
+
+        <div class="row">
+            <h3>SUBSCRIBED</h3>
+        </div>
+        <div class="row flex-div">
+            <img src="images/Jack.png" alt="">
+            <a href="#">Jack Nicholson</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/simon.png" alt="">
+            <a href="#">Simon Baker</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/tom.png" alt="">
+            <a href="#">Tom Hardy</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/megan.png" alt="">
+            <a href="#">Megan Ryan</a>
+        </div>
+        <div class="row flex-div">
+            <img src="images/cameron.png" alt="">
+            <a href="#">cameron diaz</a>
+        </div>
+    </div>
+
+
+    <div class="downBar flex-div "id="DownBar">
+        <div class="DownBar-text active">
+        <img src="images/home.png" alt="">
+        <p><a>Home</a></p>
+        </div>
+        <div class="DownBar-text">
+        <img src="images/explore.png" alt="">
+        <p>Explore</p>
+        </div>
+        <div class="DownBar-text">
+        <img src="images/history.png" alt="">
+        <p>History</p>
+        </div>
+    </div>
+
+</header>
+
+<!-- ------------------ Header Section End ------------------------ -->
+
+<!-- ------------------ Main Section Start ------------------------ -->
+<main class="main">
+    
+    <div class="main-section"> 
+        <div class="banner"> 
+            <img src="images/banner.png" alt="">
+
+        </div>
+        <!-- Video List Section -->
+        <div class="video-container">
+            <div class="video">
+                <a href="#"><img src="images/thumbnail1.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail2.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/simon.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail3.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/tom.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail4.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/megan.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail5.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail6.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail7.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail8.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail1.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail2.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/simon.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail3.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/tom.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail4.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/megan.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail5.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail6.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail7.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail8.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail1.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/Jack.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail2.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/simon.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail3.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/tom.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail4.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/megan.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail5.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail6.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail7.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+            <div class="video">
+                <a href="#"><img src="images/thumbnail8.png" alt=""></a>
+                <div class="text-video-part flex-div">
+                    <img src="images/cameron.png" alt="">
+                    <div class="text">
+                    <p><strong>Best Video Channel to learn coding that help you to web developer</strong></p>
+                    <a href="">Easy Tutorial</a>
+                    <a href="">15k Views &bull; 2 days ago</a>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <!-- Video Section End -->
+
+    </div>
+
+</main>
+
+
+
+<canvas></canvas>
+<script src="js/script.js"></script>
+
+<script>
+    let menuIcon=document.querySelector("#menu-icon");
+    let sideBar=document.querySelector("#sideBar");
+    let HideContent=document.querySelectorAll(".row.a");
+    let mainSection=document.querySelector("main");
+
+
+    menuIcon.addEventListener("click",myFunction);
+
+    function myFunction(){
+        sideBar.classList.toggle("small-sideBar");
+        mainSection.classList.toggle("large-Container");
+        
+    }
+    let MenuBar=document.getElementById("menuBar");
+    let body=document.querySelector("body");
+    let html=document.querySelector("html");
+    let div=document.querySelectorAll("div");
+    let textarea=document.querySelector("textarea");
+    // console.log(div);
+    function DarkMode(){
+        MenuBar.classList.toggle("Changetheme");
+        body.classList.toggle("Theme-Color");
+        html.classList.toggle("Theme-Color");
+        textarea.classList.toggle("TextArea-Color");
+        for(let i=0;i<=div.length;i++){
+            div[i].classList.toggle("Theme-Color");
+        }
+    }
+
+    let accountIcon=document.getElementById("account-icon");
+    accountIcon.addEventListener("click", function(){
+        if(MenuBar.style.display=="none"){
+            MenuBar.style.display="block";
+        }
+        else{
+            MenuBar.style.display="none";
+        }
+
+    });
+
+
+
+</script>
+<!-- <script src="script.js"></script> -->
+</body>
+
+</html>

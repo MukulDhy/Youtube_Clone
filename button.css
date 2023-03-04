@@ -1,0 +1,38 @@
+.menuBar{
+    display: inline-block;
+}
+.DarkMode{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    padding: 5px;
+    border-radius: 50px;
+    transition: background 0.5s ease;
+    background-color: #FCE570;
+    border: none;
+}
+.ball{
+    display: inline-block;
+    width:40px;
+    border-radius: 100%;
+    background-color: black;
+    height: 40px;
+    transform: translateY(-100%) scale(0.8);
+    position: fixed;
+    transition: transform 0.5s ease;
+}
+.DarkMode i{
+    font-size: 30px;
+    color: white;
+}
+.theme .ball{
+    transform: translateY(-100%) translateX(100%) scale(0.8);
+}
+.theme .DarkMode{
+    background: rgb(0, 0, 0);
+}
+.theme .DarkMode i:nth-child(2){
+    color: black;
+    transition: color 0.5s ease;
+}
